@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-Scale=1,shrink-to-fit=no">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstap.mini.css">
+    <link rel="stylesheet " href="form.css">
+    <title>Title</title>
+</head>
+<body>
+<div align="center" class="cod-mad-12">
+    <h2> Welcome to Student registration page</h2>
+    <div class="col-md-6">
+        <form action="#" th:action="@{/open}" th:object="${PersonForm}" method="post">
+            <div class="from-control">
+                <label for="firstname">FirstName:</label>
+                <input type="text"class="form-cast" placeholder="Adio" id="firstname" th:field="*{firstname}"/>
+            </div>
+            <div class="form-control">
+                <label for="lastname">LastName:</label>
+                <input type="text" class="form-cast" placeholder="Olamilekan" id="lastname" th:field="*{lastname}"/>
+
+            </div>
+            <div class="form-control">
+                <label for="mobile">Mobile:</label>
+                <input type="numbers" class="form-cast"placeholder="09160040389" id="mobile" th:field="*{mobile}"/>
+
+            </div>
+            <div class="form-control">
+                <label for="date birth">Date of Birth</label>
+                <input type="date" class="form-cast" placeholder="MM/DD/YY" id="date birth" th:field="*{date birth}"/>
+
+            </div>
+    <div class="form-control">
+        <label for="state of origin">State of Origin</label>
+        <input type="text" class="form-cast" placeholder="State of Origin" id="state of origin"th:field="*{state of origin}">
+
+    </div>
+            <div class="form-control">
+                <label for="country">Country:</label>
+                <select id="Country" class="form-cast"th:field="*{country}"/>
+                <option
+                    value="australia">Australia</option>
+                <option
+                    value="belgium">Belgium</option>
+                <option
+                    value="canada">Canada</option>
+                <option
+                    value="denmark">Denmark</option>
+                <option
+                    value="england">England</option>
+                <option
+                    value="france">France</option>
+                <option
+                    value="germany">Germany</option>
+                <option
+                    value="hungary">Hungary</option>
+                <option
+                    value="iceland">Iceland</option>
+                <option
+                    value="jamacia">Jamacia</option>
+                <option
+                    value="kenya">Kenya</option>
+                <option
+                    value="liberia">Liberia</option>
+                <option
+                    value="malaysia">Malaysia</option>
+                <option
+                    value="nigeria">Nigeria</option>
+                <option
+                    value="oman">Oman</option>
+                <option
+                    value="peru">Peru</option>
+                <option
+                    value="qatar">Qatar</option>
+                <option
+                    value="russia">Russia</option>
+                <option
+                    value="spain">Spain</option>
+                <option
+                    value="tanzaina">Tanzaina</option>
+                <option
+                    value="ukraine">Ukraine</option>
+                <option
+                    value="venezulea">Venezulea</option>
+                <option
+                    value="western sahara">Western Sahara</option>
+                <option
+                    value="yemen">Yemen</option>
+                <option
+                    value="zambia">Zambia</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
