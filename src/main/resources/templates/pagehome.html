@@ -16,31 +16,31 @@
         <form action="#" th:action="@{/open}" th:object="${PersonForm}" method="post">
             <div class="from-control">
                 <label for="firstname">FirstName:</label>
-                <input type="text"class="form-cast" placeholder="Adio" id="firstname" th:field="*{firstname}"/>
+                <input type="text"class="form-cast" placeholder="Adio" id="firstname" />
             </div>
             <div class="form-control">
                 <label for="lastname">LastName:</label>
-                <input type="text" class="form-cast" placeholder="Olamilekan" id="lastname" th:field="*{lastname}"/>
+                <input type="text" class="form-cast" placeholder="Olamilekan" id="lastname"/>
 
             </div>
             <div class="form-control">
                 <label for="mobile">Mobile:</label>
-                <input type="numbers" class="form-cast"placeholder="09160040389" id="mobile" th:field="*{mobile}"/>
+                <input type="numbers" class="form-cast"placeholder="09160040389" id="mobile"/>
 
             </div>
             <div class="form-control">
                 <label for="date birth">Date of Birth</label>
-                <input type="date" class="form-cast" placeholder="MM/DD/YY" id="date birth" th:field="*{date birth}"/>
+                <input type="date" class="form-cast" placeholder="MM/DD/YY" id="date birth"/>
 
             </div>
     <div class="form-control">
         <label for="state of origin">State of Origin</label>
-        <input type="text" class="form-cast" placeholder="State of Origin" id="state of origin"th:field="*{state of origin}">
+        <input type="text" class="form-cast" placeholder="State of Origin" id="state of origin">
 
     </div>
             <div class="form-control">
                 <label for="country">Country:</label>
-                <select id="Country" class="form-cast"th:field="*{country}"/>
+                <select id="Country" class="form-cast"/>
                 <option
                     value="australia">Australia</option>
                 <option
